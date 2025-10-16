@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Santhosh Sekar — Analytics & AI</title>
+  <meta name="description" content="Santhosh Sekar — Analytics & AI. Walmart Advanced Analytics, ex‑Amazon BIE, ex‑Mu Sigma. MS Business Analytics (UT Dallas). SQL, Python, Tableau/Power BI, Causal Inference, A/B Testing, BI & ETL automation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0e14; /* slate/ink */
+      --muted:#aab2c0; /* text secondary */
+      --text:#e6eaf2; /* text primary */
+      --card:#11151e; /* card bg */
+      --accent:#4f7cff; /* link + accent */
+      --accent-2:#7bdcb5; /* subtle accent */
+      --border:#1b2230;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;
+      background:linear-gradient(180deg,#0b0e14 0%, #0d1018 40%, #0b0e14 100%);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{opacity:.9}
+    .wrap{max-width:1120px; margin:0 auto; padding:32px 20px 96px}
+
+    /* Header */
+    header{display:flex; align-items:center; justify-content:space-between; gap:16px; position:sticky; top:0; backdrop-filter:saturate(160%) blur(8px); background:rgba(11,14,20,.7); border-bottom:1px solid var(--border); padding:12px 20px; z-index:40}
+    .brand{display:flex; align-items:center; gap:12px}
+    .logo{inline-size:36px; block-size:36px; border-radius:10px; background:linear-gradient(135deg,var(--accent),#8aa4ff); box-shadow:0 10px 30px rgba(79,124,255,.25)}
+    .brand h1{font-size:16px; letter-spacing:.4px; margin:0; font-weight:700}
+    nav a{margin-left:18px; font-size:14px; color:var(--muted)}
+
+    /* Hero */
+    .hero{display:grid; grid-template-columns:1.1fr .9fr; gap:28px; align-items:center; padding:64px 0 28px}
+    .kicker{font-size:12px; letter-spacing:.28em; text-transform:uppercase; color:var(--accent-2)}
+    .title{font-size:42px; line-height:1.1; margin:8px 0 12px; font-weight:800}
+    .subtitle{font-size:18px; color:var(--muted); margin:0 0 18px; max-width:58ch}
+    .cta{display:flex; gap:14px; flex-wrap:wrap}
+    .btn{padding:12px 16px; border:1px solid var(--border); background:var(--card); color:var(--text); border-radius:14px; font-weight:600; font-size:14px}
+    .btn.primary{background:var(--accent); color:#0b0e14; border-color:transparent}
+    .metrics{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin-top:22px}
+    .metric{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:14px}
+    .metric .n{font-size:22px; font-weight:800}
+    .metric .l{font-size:12px; color:var(--muted)}
+
+    /* Sections */
+    section{padding:48px 0}
+    .section-title{font-size:24px; margin:0 0 18px; letter-spacing:.3px}
+    .grid{display:grid; grid-template-columns:repeat(12,1fr); gap:18px}
+    .card{grid-column:span 12; background:var(--card); border:1px solid var(--border); border-radius:18px; padding:18px}
+    @media(min-width:860px){.card.half{grid-column:span 6}}
+    @media(min-width:1080px){.card.third{grid-column:span 4}}
+    .card h3{margin:0 0 6px}
+    .card p{margin:0; color:var(--muted)}
+
+    /* Projects */
+    .project{display:flex; flex-direction:column; gap:6px}
+    .project .tags{display:flex; gap:8px; flex-wrap:wrap; margin-top:4px}
+    .tag{font-size:11px; padding:6px 8px; border:1px solid var(--border); background:#0f1320; border-radius:999px; color:var(--muted)}
+
+    /* Footer */
+    footer{border-top:1px solid var(--border); color:var(--muted); padding:28px 0 0}
+
+    /* Utilities */
+    .muted{color:var(--muted)}
+    .cols-2{columns:2; column-gap:22px}
+    @media(max-width:860px){.hero{grid-template-columns:1fr}.cols-2{columns:1}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo" aria-hidden="true"></div>
+      <h1>Santhosh Sekar — Analytics & AI</h1>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrap" id="top">
+    <section class="hero" aria-labelledby="intro-title">
+      <div>
+        <div class="kicker">Data · Experimentation · BI · AI</div>
+        <h2 id="intro-title" class="title">Fortune‑500–tested analytics leader turning messy data into decisions</h2>
+        <p class="subtitle">
+          Manager, Advanced Analytics at Walmart; ex‑Amazon BIE; ex‑Mu Sigma. MS — Business Analytics & AI (UT Dallas). I build causal experiments, BI systems, and automated insight engines across retail, customer service, and product.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="https://www.linkedin.com/in/santhoshsekar1" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://topmate.io/santhosh_sekar" target="_blank" rel="noopener">Topmate</a>
+        </div>
+        <div class="metrics" role="list" aria-label="Quick facts">
+          <div class="metric" role="listitem"><div class="n">4+ yrs</div><div class="l">Analytics & BI</div></div>
+          <div class="metric" role="listitem"><div class="n">Retail/CPG</div><div class="l">Walmart · Mars · E‑comm</div></div>
+          <div class="metric" role="listitem"><div class="n">SQL · Python</div><div class="l">Tableau · Power BI</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Focus</h3>
+          <p class="cols-2">Experiment design & causal inference · KPI frameworks · BI modernization · ELT/ETL automation · Customer engagement analytics · GenAI applications for support & CRM</p>
+        </div>
+        <div class="card" style="margin-top:14px">
+          <h3>Currently</h3>
+          <p>Advanced Analytics at Walmart, shaping metrics and experimentation for customer care and engagement.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-title">
+      <h2 class="section-title" id="about-title">About</h2>
+      <div class="grid">
+        <article class="card half">
+          <h3>Experience snapshot</h3>
+          <p>Walmart Advanced Analytics · Amazon Business Intelligence Engineer (BIE) · Mu Sigma (Lead BI Engineer, Product Analyst, Data Analyst)</p>
+        </article>
+        <article class="card half">
+          <h3>Education</h3>
+          <p>MS, Business Analytics & AI — The University of Texas at Dallas (2023–2025). B.Tech, Mechanical Engineering — SASTRA.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" aria-labelledby="exp-title">
+      <h2 class="section-title" id="exp-title">Selected experience</h2>
+      <div class="grid">
+        <article class="card third">
+          <h3>Walmart — Manager, Advanced Analytics</h3>
+          <p class="muted">2025 — Present</p>
+          <p>Define metrics and experiments for customer care and engagement; operationalize dashboards and automation to drive measurable defect reduction and CX outcomes.</p>
+        </article>
+        <article class="card third">
+          <h3>Amazon — Business Intelligence Engineer</h3>
+          <p class="muted">2024</p>
+          <p>Built executive acquisition/engagement dashboards on Redshift; prototyped causal inference in SageMaker to quantify feature impact; delivered customer segmentation data assets.</p>
+        </article>
+        <article class="card third">
+          <h3>Mu Sigma — BI Engineering</h3>
+          <p class="muted">2019 — 2023</p>
+          <p>Automated ETL and reporting across retail and FMCG; cut report delivery time by days; consolidated Alteryx→Tableau Prep workflows; built shrinkage and private brands trackers.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="proj-title">
+      <h2 class="section-title" id="proj-title">Projects</h2>
+      <div class="grid">
+        <article class="card project third">
+          <h3>Feature Impact — Causal Prototype</h3>
+          <p>Python + SageMaker prototype to estimate engagement uplift from a new feature; created segmentation dataset in Redshift and reported results to product stakeholders.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">SageMaker</span><span class="tag">Redshift</span><span class="tag">Causal Inference</span></div>
+        </article>
+        <article class="card project third">
+          <h3>Executive Acquisition Dashboard</h3>
+          <p>Tableau + Redshift executive summary on user acquisition/activity for marketers and business owners, informing monetization and lifecycle decisions.</p>
+          <div class="tags"><span class="tag">SQL</span><span class="tag">Tableau</span><span class="tag">BI</span></div>
+        </article>
+        <article class="card project third">
+          <h3>Rewards Reporting Automation</h3>
+          <p>Flask tool to streamline data collection; automated certificate generation and Tableau server PDF exports, cutting cycle time by 60–90%.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">Tableau Server</span><span class="tag">Automation</span></div>
+        </article>
+        <article class="card project third">
+          <h3>Retail Shrinkage Reporting</h3>
+          <p>Automated BigQuery + Tableau Prep pipeline and Power BI reporting for 6k+ stores across five markets, enabling monthly inventory shrinkage oversight.</p>
+          <div class="tags"><span class="tag">BigQuery</span><span class="tag">Tableau Prep</span><span class="tag">Power BI</span></div>
+        </article>
+        <article class="card project third">
+          <h3>Private Brands Tracker Fixes</h3>
+          <p>Stabilized and improved accuracy in 10 Alteryx workflows across six markets; delivered decision‑grade private brands performance metrics.</p>
+          <div class="tags"><span class="tag">Alteryx</span><span class="tag">ETL</span><span class="tag">Data Quality</span></div>
+        </article>
+        <article class="card project third">
+          <h3>Merchandising Experiment Design</h3>
+          <p>POS + merchandising analysis to propose interventions that improved ROI; designed statistical experiment to validate placement impact.</p>
+          <div class="tags"><span class="tag">PySpark</span><span class="tag">SQL</span><span class="tag">Experimentation</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-title">
+      <h2 class="section-title" id="skills-title">Skills</h2>
+      <div class="grid">
+        <article class="card third">
+          <h3>Languages & Libraries</h3>
+          <p>SQL, Python, R, SAS</p>
+        </article>
+        <article class="card third">
+          <h3>BI & Visualization</h3>
+          <p>Tableau, Microsoft Power BI, Looker Studio</p>
+        </article>
+        <article class="card third">
+          <h3>Data & Cloud</h3>
+          <p>GCP, AWS, Hadoop, Hive, Spark, PySpark</p>
+        </article>
+        <article class="card third">
+          <h3>ETL & Automation</h3>
+          <p>Alteryx, Tableau Prep, Python automation</p>
+        </article>
+        <article class="card third">
+          <h3>Ways of Working</h3>
+          <p>Agile, Azure DevOps, Jira, Confluence</p>
+        </article>
+        <article class="card third">
+          <h3>Certifications</h3>
+          <p>Alteryx Designer Core · Google Analytics · Databricks GenAI Fundamentals</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 class="section-title" id="contact-title">Contact</h2>
+      <div class="grid">
+        <article class="card half">
+          <h3>Get in touch</h3>
+          <p>Email: <a href="mailto:santhosh07031998@gmail.com">santhosh07031998@gmail.com</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/santhoshsekar1" target="_blank" rel="noopener">linkedin.com/in/santhoshsekar1</a></p>
+          <p>Topmate: <a href="https://topmate.io/santhosh_sekar" target="_blank" rel="noopener">topmate.io/santhosh_sekar</a></p>
+        </article>
+        <article class="card half">
+          <h3>Attribution</h3>
+          <p class="muted">Design: custom, no frameworks. Hosted on GitHub Pages.</p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="wrap">
+      <p>© <span id="y"></span> Santhosh Sekar</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- JSON‑LD for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Santhosh Sekar",
+    "jobTitle": "Manager, Advanced Analytics",
+    "affiliation": {"@type":"Organization","name":"Walmart"},
+    "alumniOf": {"@type":"CollegeOrUniversity","name":"The University of Texas at Dallas"},
+    "sameAs": [
+      "https://www.linkedin.com/in/santhoshsekar1",
+      "https://topmate.io/santhosh_sekar"
+    ],
+    "knowsAbout": ["Analytics","Business Intelligence","Experimentation","Causal Inference","Retail Analytics","Customer Service Analytics","Generative AI"]
+  }
+  </script>
+</body>
+</html>
